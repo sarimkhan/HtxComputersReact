@@ -22,7 +22,7 @@ import Divider from "@mui/material/Divider";
 import MKBox from "components/MKBox";
 
 // Material Kit 2 React examples
-import DefaultCounterCard from "examples/Cards/CounterCards/DefaultCounterCard";
+import DefaultInfoCard from "examples/Cards/InfoCards/DefaultInfoCard";
 
 function Counters() {
   return (
@@ -30,29 +30,29 @@ function Counters() {
       <Container>
         <Grid container item xs={12} lg={9} sx={{ mx: "auto" }}>
           <Grid item xs={12} md={4}>
-            <DefaultCounterCard
-              count={70}
-              suffix="+"
-              title="Coded Elements"
-              description="From buttons, to inputs, navbars, alerts or cards, you are covered"
-            />
+          <DefaultInfoCard
+  icon="local_shipping"
+  title="Free Delivery!"
+  description="We offer free delivery on all our orders. The order gets delivered same day or the next business day"
+  direction="center"
+/>
           </Grid>
           <Grid item xs={12} md={4} display="flex">
             <Divider orientation="vertical" sx={{ display: { xs: "none", md: "block" }, mx: 0 }} />
-            <DefaultCounterCard
-              count={15}
-              suffix="+"
-              title="Design Blocks"
-              description="Mix the sections, change the colors and unleash your creativity"
-            />
+            <DefaultInfoCard
+  icon="workspace_premium"
+  title="7 Day Warranty!"
+  description="All our producs come with a 7 day warranty/trial starting from the day of delivery. You like it? Keep it!"
+  direction="center"
+/>
             <Divider orientation="vertical" sx={{ display: { xs: "none", md: "block" }, ml: 0 }} />
           </Grid>
           <Grid item xs={12} md={4}>
-            <DefaultCounterCard
-              count={4}
-              title="Pages"
-              description="Save 3-4 weeks of work when you use our pre-made pages for your website"
-            />
+          <DefaultInfoCard
+  icon="payments"
+  title="Cash on Delivery!"
+  description="We dont't want your card information. Get the Laptop, Test it, then pay us cash/cash-app. Learn more"
+  direction="center"/>
           </Grid>
         </Grid>
       </Container>

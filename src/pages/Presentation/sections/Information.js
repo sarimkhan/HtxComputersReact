@@ -19,6 +19,8 @@ import Grid from "@mui/material/Grid";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
+import MKBadge from "components/MKBadge";
+import MKTypography from "components/MKTypography";
 
 // Material Kit 2 React examples
 import RotatingCard from "examples/Cards/RotatingCard";
@@ -27,74 +29,143 @@ import RotatingCardBack from "examples/Cards/RotatingCard/RotatingCardBack";
 import DefaultInfoCard from "examples/Cards/InfoCards/DefaultInfoCard";
 
 // Images
-import bgFront from "assets/images/rotating-card-bg-front.jpeg";
-import bgBack from "assets/images/rotating-card-bg-back.jpeg";
+import bgFrontLatitude7410 from "assets/images/latitude7410.jpg";
+import bgFrontinpiron3000 from "assets/images/inpiron3000.jpg";
+import bgFronthpx360 from "assets/images/hpx360.jpg";
+import bgBack from "assets/images/darkwallpaper.jpg";
 
 function Information() {
   return (
     <MKBox component="section" py={6} my={6}>
       <Container>
         <Grid container item xs={11} spacing={3} alignItems="center" sx={{ mx: "auto" }}>
+        <MKTypography sx={{ mx: "auto" }} variant="h2" fontWeight="bold">
+            Meant for Business
+          </MKTypography>
+          <MKTypography sx={{ mx: "auto" }} variant="body1" color="text">
+          Designed and intended for company use, traveling and longer active periods than personal-use laptops.
+          </MKTypography>
           <Grid item xs={12} lg={4} sx={{ mx: "auto" }}>
             <RotatingCard>
               <RotatingCardFront
-                image={bgFront}
+                image={bgFrontLatitude7410}
                 icon="touch_app"
                 title={
                   <>
-                    Feel the
-                    <br />
-                    Material Kit
+                    Dell Latitude <span style={{color:"red"}}>7410</span> <br/>
+                    <MKBadge badgeContent="$350" size="lg" color="info" variant="contained" container />
                   </>
                 }
-                description="All the MUI components that you need in a development have been re-design with the new look."
+                description={<>
+                  Intel Core i7 vPro
+                  <br/>
+                  16GB Ram
+                  <br/>
+                  512GB Ssd
+                  <br/>
+                  Windows 11 Pro
+                  <br/>
+                  14" FHD Display
+                </>}
               />
               <RotatingCardBack
                 image={bgBack}
-                title="Discover More"
+                title="Dell Latitude 7410"
                 description="You will save a lot of time going from prototyping to full-functional code because all elements are implemented."
                 action={{
                   type: "internal",
-                  route: "/sections/page-sections/page-headers",
-                  label: "start with header",
+                  route: "/checkout?product=",
+                  label: "Buy Now",
+                }}
+                action1={{
+                  type: "internal",
+                  route: "/product?product=",
+                  label: "View Product",
                 }}
               />
             </RotatingCard>
           </Grid>
-          <Grid item xs={12} lg={7} sx={{ ml: "auto" }}>
-            <Grid container spacing={3}>
-              <Grid item xs={12} md={6}>
-                <DefaultInfoCard
-                  icon="content_copy"
-                  title="Full Documentation"
-                  description="Built by developers for developers. Check the foundation and you will find
-                    everything inside our documentation."
-                />
-              </Grid>
-              <Grid item xs={12} md={6}>
-                <DefaultInfoCard
-                  icon="flip_to_front"
-                  title="MUI Ready"
-                  description="The world's most popular react components library for building user interfaces."
-                />
-              </Grid>
-            </Grid>
-            <Grid container spacing={3} sx={{ mt: { xs: 0, md: 6 } }}>
-              <Grid item xs={12} md={6}>
-                <DefaultInfoCard
-                  icon="price_change"
-                  title="Save Time & Money"
-                  description="Creating your design from scratch with dedicated designers can be very expensive. Start with our Design System."
-                />
-              </Grid>
-              <Grid item xs={12} md={6}>
-                <DefaultInfoCard
-                  icon="devices"
-                  title="Fully Responsive"
-                  description="Regardless of the screen size, the website content will naturally fit the given resolution."
-                />
-              </Grid>
-            </Grid>
+
+          <Grid item xs={12} lg={4} sx={{ mx: "auto" }}>
+            <RotatingCard>
+              <RotatingCardFront
+                image={bgFrontinpiron3000}
+                icon="touch_app"
+                title={
+                  <>
+                    Dell Inspiron 3000 <span style={{color:"red"}}>15</span> <br/>
+                    <MKBadge badgeContent="$250" size="lg" color="info" variant="contained" container />
+                  </>
+                }
+                description={<>
+                  Intel Core i5
+                  <br/>
+                  8GB Ram
+                  <br/>
+                  256GB Ssd
+                  <br/>
+                  Windows 11 Pro
+                  <br/>
+                  15.6" Display
+                </>}
+              />
+              <RotatingCardBack
+                image={bgBack}
+                title="Dell Inspiron 3000 15  "
+                description="You will save a lot of time going from prototyping to full-functional code because all elements are implemented."
+                action={{
+                  type: "internal",
+                  route: "/sections/page-sections/page-headers",
+                  label: "More Details",
+                }}
+                action1={{
+                  type: "internal",
+                  route: "/product?product=",
+                  label: "View Product",
+                }}
+              />
+            </RotatingCard>
+          </Grid>
+
+          <Grid item xs={12} lg={4} sx={{ mx: "auto" }}>
+            <RotatingCard>
+              <RotatingCardFront
+                image={bgFronthpx360}
+                icon="touch_app"
+                title={
+                  <>
+                    Hp Elitebook <span style={{color:"red"}}>x360</span> <br/>
+                    <MKBadge badgeContent="$350" size="lg" color="info" variant="contained" container />
+                  </>
+                }
+                description={<>
+                  Intel Core i7 vPro
+                  <br/>
+                  16GB Ram
+                  <br/>
+                  512GB Ssd
+                  <br/>
+                  Windows 11 Pro
+                  <br/>
+                  13.3" FHD Display
+                </>}
+              />
+              <RotatingCardBack
+                image={bgBack}
+                title="Hp Elitebook x360"
+                description="You will save a lot of time going from prototyping to full-functional code because all elements are implemented."
+                action={{
+                  type: "internal",
+                  route: "/sections/page-sections/page-headers",
+                  label: "More Details",
+                }}
+                action1={{
+                  type: "internal",
+                  route: "/product?product=",
+                  label: "View Product",
+                }}
+              />
+            </RotatingCard>
           </Grid>
         </Grid>
       </Container>

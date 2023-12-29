@@ -26,7 +26,7 @@ import MKTypography from "components/MKTypography";
 function RotatingCardFront({ color, image, icon, title, description }) {
   return (
     <MKBox
-      display="flex"
+      display="block"
       justifyContent="center"
       alignContent="center"
       borderRadius="lg"
@@ -34,26 +34,22 @@ function RotatingCardFront({ color, image, icon, title, description }) {
       width="100%"
       position="relative"
       zIndex={2}
-      sx={{
-        backgroundImage: ({ palette: { gradients }, functions: { linearGradient, rgba } }) =>
-          `${linearGradient(
-            rgba(gradients[color] ? gradients[color].main : gradients.info.main, 0.85),
-            rgba(gradients[color] ? gradients[color].main : gradients.info.main, 0.85)
-          )}, url(${image})`,
-        backgroundSize: "cover",
-        backfaceVisibility: "hidden",
-      }}
     >
-      <MKBox py={12} px={3} textAlign="center" lineHeight={1}>
-        {icon && (
-          <MKTypography variant="h2" color="white" my={2}>
-            {typeof icon === "string" ? <Icon>{icon}</Icon> : icon}
-          </MKTypography>
-        )}
-        <MKTypography variant="h3" color="white" gutterBottom>
+      <MKBox borderRadius="lg" sx={{
+        backgroundImage: () =>
+          `url(${image})`,
+        backgroundSize: "contain",
+        backgroundRepeat:"none",
+        backfaceVisibility: "hidden"
+        
+      }} style={{minHeight:"200px", marginTop:"20px", backgroundPosition:"center", backgroundRepeat: "no-repeat"}} px={1} textAlign="center" lineHeight={1}>
+        
+      </MKBox>
+      <MKBox py={2} px={3} textAlign="center" lineHeight={1}>
+        <MKTypography variant="h3" color="black" gutterBottom>
           {title}
         </MKTypography>
-        <MKTypography variant="body2" color="white" opacity={0.8}>
+        <MKTypography variant="body2" color="black" opacity={0.8}>
           {description}
         </MKTypography>
       </MKBox>

@@ -70,41 +70,41 @@ import Typography from "layouts/sections/elements/typography";
 
 const routes = [
   {
-    name: "pages",
+    name: "About Us",
     icon: <Icon>dashboard</Icon>,
     columns: 1,
     rowsPerColumn: 2,
     collapse: [
       {
-        name: "landing pages",
+        name: "About Us",
         collapse: [
           {
-            name: "about us",
+            name: "Who we are",
             route: "/pages/landing-pages/about-us",
             component: <AboutUs />,
+          },
+          {
+            name: "How it works",
+            route: "/pages/landing-pages/author",
+            component: <Author />,
           },
           {
             name: "contact us",
             route: "/pages/landing-pages/contact-us",
             component: <ContactUs />,
           },
-          {
-            name: "author",
-            route: "/pages/landing-pages/author",
-            component: <Author />,
-          },
         ],
       },
-      {
-        name: "account",
-        collapse: [
-          {
-            name: "sign in",
-            route: "/pages/authentication/sign-in",
-            component: <SignIn />,
-          },
-        ],
-      },
+      // {
+      //   name: "account",
+      //   collapse: [
+      //     {
+      //       name: "sign in",
+      //       route: "/pages/authentication/sign-in",
+      //       component: <SignIn />,
+      //     },
+      //   ],
+      // },
     ],
   },
   {
@@ -238,32 +238,32 @@ const routes = [
       },
     ],
   },
-  {
-    name: "docs",
-    icon: <Icon>article</Icon>,
-    collapse: [
-      {
-        name: "getting started",
-        description: "All about overview, quick start, license and contents",
-        href: "https://www.creative-tim.com/learning-lab/react/quick-start/material-kit/",
-      },
-      {
-        name: "foundation",
-        description: "See our colors, icons and typography",
-        href: "https://www.creative-tim.com/learning-lab/react/colors/material-kit/",
-      },
-      {
-        name: "components",
-        description: "Explore our collection of fully designed components",
-        href: "https://www.creative-tim.com/learning-lab/react/alerts/material-kit/",
-      },
-      {
-        name: "plugins",
-        description: "Check how you can integrate our plugins",
-        href: "https://www.creative-tim.com/learning-lab/react/datepicker/material-kit/",
-      },
-    ],
-  },
+  // {
+  //   name: "docs",
+  //   icon: <Icon>article</Icon>,
+  //   collapse: [
+  //     {
+  //       name: "getting started",
+  //       description: "All about overview, quick start, license and contents",
+  //       href: "https://www.creative-tim.com/learning-lab/react/quick-start/material-kit/",
+  //     },
+  //     {
+  //       name: "foundation",
+  //       description: "See our colors, icons and typography",
+  //       href: "https://www.creative-tim.com/learning-lab/react/colors/material-kit/",
+  //     },
+  //     {
+  //       name: "components",
+  //       description: "Explore our collection of fully designed components",
+  //       href: "https://www.creative-tim.com/learning-lab/react/alerts/material-kit/",
+  //     },
+  //     {
+  //       name: "plugins",
+  //       description: "Check how you can integrate our plugins",
+  //       href: "https://www.creative-tim.com/learning-lab/react/datepicker/material-kit/",
+  //     },
+  //   ],
+  // },
   {
     name: "github",
     icon: <GitHubIcon />,
