@@ -41,8 +41,8 @@ function Counters() {
             <Divider orientation="vertical" sx={{ display: { xs: "none", md: "block" }, mx: 0 }} />
             <DefaultInfoCard
   icon="workspace_premium"
-  title="7 Day Warranty!"
-  description="All our producs come with a 7 day warranty/trial starting from the day of delivery. You like it? Keep it!"
+  title="14 Day Warranty!"
+  description="All our producs come with a 14 day warranty/trial starting from the day of delivery. You like it? Keep it!"
   direction="center"
 />
             <Divider orientation="vertical" sx={{ display: { xs: "none", md: "block" }, ml: 0 }} />
