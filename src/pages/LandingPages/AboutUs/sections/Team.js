@@ -25,10 +25,14 @@ import MKTypography from "components/MKTypography";
 import HorizontalTeamCard from "examples/Cards/TeamCards/HorizontalTeamCard";
 
 // Images
-import team1 from "assets/images/team-5.jpg";
-import team2 from "assets/images/bruce-mars.jpg";
-import team3 from "assets/images/ivana-squares.jpg";
-import team4 from "assets/images/ivana-square.jpg";
+import ProdExam from "assets/images/Examination2.jpg";
+import ProdTest from "assets/images/Product-Testing.jpg";
+import PerformTest from "assets/images/SpeedTest4.jpg";
+import SoftwareCheck from "assets/images/Storage2.jpg";
+import FinalVerification from "assets/images/Final3.jpg";
+import ProdKnowledge from "assets/images/Product Knowledge2.jpg";
+import Selling from "assets/images/Selling Image3.png";
+import Support from "assets/images/Support2.jpg";
 
 function Team() {
   return (
@@ -44,12 +48,13 @@ function Team() {
       <Container>
         <Grid container>
           <Grid item xs={12} md={8} sx={{ mb: 6 }}>
-            <MKTypography variant="h3" color="white">
-              The Executive Team
+            <MKTypography variant="h3" color="white" mb={2}>
+              Trust the Process
             </MKTypography>
             <MKTypography variant="body2" color="white" opacity={0.8}>
-              There&apos;s nothing I really wanted to do in life that I wasn&apos;t able to get good
-              at. That&apos;s my skill.
+              At HTX Computers, we believe in a meticulous journey of crafting reliable computers that stand the test of time.
+              From careful selection of components to rigorous testing, we ensure every detail is perfected, so you can trust in the performance and dependability of our machines.
+              Embrace technology with confidence - trust the process, trust us.
             </MKTypography>
           </Grid>
         </Grid>
@@ -57,40 +62,80 @@ function Team() {
           <Grid item xs={12} lg={6}>
             <MKBox mb={1}>
               <HorizontalTeamCard
-                image={team1}
-                name="Emma Roberts"
-                position={{ color: "info", label: "UI Designer" }}
-                description="Artist is a term applied to a person who engages in an activity deemed to be an art."
+                image={ProdExam}
+                name="Step 1: Product Examination"
+                position={{ color: "info", label: "Physical Examination" }}
+                description="Examine the exterior for physical damage, scartches, or dents. Check ports, connectors, and buttons for proper functionality."
               />
             </MKBox>
           </Grid>
           <Grid item xs={12} lg={6}>
             <MKBox mb={1}>
               <HorizontalTeamCard
-                image={team2}
-                name="William Pearce"
-                position={{ color: "info", label: "Boss" }}
-                description="Artist is a term applied to a person who engages in an activity deemed to be an art."
+                image={ProdTest}
+                name="Step 2: Product Testing"
+                position={{ color: "info", label: "Functionality" }}
+                description="Power on the computer to ensure it starts up without any issues. Test all keys on the keyboard and check the touchpad for responsiveness."
+              />
+            </MKBox>
+          </Grid>
+          <Grid item xs={12} lg={6}>
+            <MKBox mb={1}>
+              <HorizontalTeamCard
+                image={PerformTest}
+                name="Step 3: Performance Test"
+                position={{ color: "info", label: "Performance" }}
+                description="Open and use multiple applications to check the overall performance. Check battery health and test all ports. Ensure Wi-Fi and Bluetooth connectors are working."
+              />
+            </MKBox>
+          </Grid>
+          <Grid item xs={12} lg={6}>
+            <MKBox mb={1}>
+              <HorizontalTeamCard
+                image={SoftwareCheck}
+                name="Step 4: Storage and Software Check"
+                position={{ color: "info", label: "Software" }}
+                description="Verify the available storage capacity. Update the operating system to the latest version. Restore the system to its factory settings."
               />
             </MKBox>
           </Grid>
           <Grid item xs={12} lg={6}>
             <MKBox mb={{ xs: 1, lg: 0 }}>
               <HorizontalTeamCard
-                image={team3}
-                name="Ivana Flow"
-                position={{ color: "info", label: "Athlete" }}
-                description="Artist is a term applied to a person who engages in an activity deemed to be an art."
+                image={FinalVerification}
+                name="Step 5: Final Verification"
+                position={{ color: "info", label: "Checklist" }}
+                description="Perform a final verification of all components to ensure everything is in working condition. Ensure the software meets all requirements to the end-users."
+              />
+            </MKBox>
+          </Grid>
+          <Grid item xs={12} lg={6}>
+            <MKBox mb={1}>
+              <HorizontalTeamCard
+                image={ProdKnowledge}
+                name="Step 6: Product Knowledge"
+                position={{ color: "info", label: "Marketplace" }}
+                description="Create a detailed sales listing with all specifications and the computer's condition. We keep up with the pricing trends and help you secure the best deals."
+              />
+            </MKBox>
+          </Grid>
+          <Grid item xs={12} lg={6}>
+            <MKBox mb={1}>
+              <HorizontalTeamCard
+                image={Selling}
+                name="Step 7: Selling"
+                position={{ color: "info", label: "Sales" }}
+                description="Discuss payment options and provide a seamless and secure transaction process. Comes with a 14-day warranty for peace of mind."
               />
             </MKBox>
           </Grid>
           <Grid item xs={12} lg={6}>
             <MKBox mb={{ xs: 1, lg: 0 }}>
               <HorizontalTeamCard
-                image={team4}
-                name="Marquez Garcia"
-                position={{ color: "info", label: "JS Developer" }}
-                description="Artist is a term applied to a person who engages in an activity deemed to be an art."
+                image={Support}
+                name="Step 8: After Sales Support"
+                position={{ color: "info", label: "Follow-Up" }}
+                description="Follow up with the customer to ensure satisfaction. Address concerns promptly and encourage feedback. Customer Service is our priority."
               />
             </MKBox>
           </Grid>

@@ -89,31 +89,31 @@ function AboutUs() {
                 },
               })}
             >
-              Work with an amazing design
+              HTX Computer Market, your trusted source for reliable computing solutions
             </MKTypography>
-            <MKTypography variant="body1" color="white" opacity={0.8} mt={1} mb={3}>
-              We&apos;re constantly trying to express ourselves and actualize our dreams. If you
-              have the opportunity to play this game
+            <MKTypography variant="body1" color="white" opacity={0.8} mt={3} mb={3}>
+              Reliable computers tailored for your community's needs. Empowering your community with dependable local computing solutions by enhancing your productivity
+              and redefining your digital experience.
             </MKTypography>
-            <MKButton color="default" sx={{ color: ({ palette: { dark } }) => dark.main }}>
+            {/*<MKButton color="default" sx={{ color: ({ palette: { dark } }) => dark.main }}>
               create account
-            </MKButton>
-            <MKTypography variant="h6" color="white" mt={8} mb={1}>
+            </MKButton> */}
+            <MKTypography variant="h6" color="white" mt={4} mb={1}>
               Find us on
             </MKTypography>
             <MKBox display="flex" justifyContent="center" alignItems="center">
-              <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
+              <MKTypography component="a" variant="body1" color="white" href="#" mr={4}>
                 <i className="fab fa-facebook" />
               </MKTypography>
-              <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
+              <MKTypography component="a" variant="body1" color="white" href="#" mr={4}>
                 <i className="fab fa-instagram" />
               </MKTypography>
-              <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
+              <MKTypography component="a" variant="body1" color="white" href="#">
                 <i className="fab fa-twitter" />
               </MKTypography>
-              <MKTypography component="a" variant="body1" color="white" href="#">
+              {/*<MKTypography component="a" variant="body1" color="white" href="#">
                 <i className="fab fa-google-plus" />
-              </MKTypography>
+          </MKTypography> */}
             </MKBox>
           </Grid>
         </Container>
@@ -129,8 +129,8 @@ function AboutUs() {
       >
         <Information />
         <Team />
-        <Featuring />
-        <Newsletter />
+        {/*<Featuring />
+        <Newsletter /> */}
       </Card>
       <MKBox pt={6} px={1} mt={6}>
         <DefaultFooter content={footerRoutes} />
