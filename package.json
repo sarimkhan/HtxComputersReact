@@ -26,6 +26,8 @@
     "axios": "^1.6.2",
     "chroma-js": "2.4.2",
     "flatpickr": "4.6.13",
+    "google-auth-library": "^9.4.1",
+    "google-spreadsheet": "^4.1.1",
     "i8-icon": "^0.9.4",
     "openai": "^4.24.1",
     "prop-types": "15.8.1",
@@ -37,6 +39,7 @@
     "react-router-dom": "^6.10.0",
     "react-scripts": "5.0.1",
     "react-syntax-highlighter": "15.5.0",
+    "sheetdb-node": "^0.0.12",
     "web-vitals": "3.3.1"
   },
   "scripts": {

@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "htxcomputers",
+  "private_key_id": "c1488b8cefe662fc86c33870512ef948706a5704",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCxx7C5WY2s/KMB\nwM0HJGpeP/7K0E1YoIEcvmo+YKTwmQGjjN3Fu+92IWbkPgeC9oAEdOP1vXJv0ulw\nx4+srr+y90drmlCLNBPWomptgVDtzMO7v4PL9H+Apq1lUZIxTBK9L9qdSn5Gp431\nY5jknhrITviJ6/Vk+n+O2w9YUTUa5pBZ9xA3SaIlZwHReqT8MTPNZ8xCdzN83M2W\nDqBWHEQxcPK3/nZAIP26e9HOrrS9GIsGszNiAMRRZXg4tumlln4MI2Y2hMVCSTA3\ncnZoAhlMIdJFP3+CCWmTNsr83wAKV3XVBJ/O0yWFyQyouI5B+Ua8gKEbMrsE0a/m\nmLQd0DlhAgMBAAECggEAJLrBBEpAPxEjDGWs9mDLqRVHqtdGY50lj663fJOzABJc\niFG+L/AYFSvpehZmruQGpuUPg+HUFs5YdHiGcoLYED2Of+it41SrFJkRq/YfpkG7\n3ro+nJCzFv1YraogrhateHC+leiiFi7f4WbmW7VeiyvlpXkehfJLEFSp4vFEK35G\n8Z6tUiEWRK47/AkKRyYE9Y/IssSewCBvJ1ZBpiGfmyWGzMO9e1xcKZcmv64bUqtb\nEidtVbMsGbXTjxk7qEN4TsFbIbWSdQ5BHtBfboKBo/w/Wt46wbYc9oXJfiU7MJAv\nddQQJvoKERHzVsko3/yH6SCzAbw55RqphzXiTZAjkQKBgQDeiavjDr0RLBYO6D5S\ntw/LvpIvKlYHmfqjbWjDt/zhans5NyxIRjeVD/WAoA5RzOgT6LjgG28u+xxBZmy3\n5ZCkR93v70gPhxCeanYP48NmUxYOsa7f2bIUi/ynJXAsvgbAopEosxuwvoxxNtxG\nRHGip6kFZNP2pMrZPxzxq4HJRwKBgQDMgx9ob3FB1XWKRmPBXRlP8MvQn8fm5k1X\nxENgM+EcgSJO5n4J/pDblVyjyi05Z2dWkZDCM0Yl/wz9jcGO+IiGTqOB3fMyUPNU\nODKoounEKzoi4lbQNjPP6U1ZYyQ7LT57JwpOItwdrAKrKVLylb3xkYp3I11C82op\n4o9Ri3G8FwKBgQCG+oxGmZ72Nn5epmF+/EhZdYrnjs9FpxDOZcNgy01YUKTTLHLw\nl56JDHgFf4+P8DBoOwU/8YP7xBX8WSriVBzqeCjWqpVTzcG3xK09sBHKE+VSHlYK\nstl/+vTRUTT7/nrMBw7y18iY6Mr4tKTg/gzK8tTjT6f9dzEOmmhs8XE0awKBgQCI\nHaFy3fFwksUHgi/0y6UEOs08jov7Fz9U8fCx//WNBjmyb+BlgIQjUfb1oKOW+Eak\nLIA/cOb4dRfNTmMMaEhds8tJrVKnI4/AdyLocH3MLcUk4KZNMDYt5CayHrVHmaZj\nSymltbfxG8Iu73MguB9Sv7576xKwc9guBnfDG19YgwKBgBABbXxChok0gbuvMbPP\n2vw3Rm0VrBWqYEMrSNAiRuPdl9nRhzP8Q8jXLeyXZIxaFk+l1BOAE23ekJJMVGY7\nc0ZfJ78gC1wyEhdBn5HBfvnTLyZCnfRBcQDMC8MOjwTscOcsXnn3z90FLlA+FCqu\nugV1pU+EtNqMv4YJ7CUGcAjl\n-----END PRIVATE KEY-----\n",
+  "client_email": "htxcomputersservice@htxcomputers.iam.gserviceaccount.com",
+  "client_id": "110210212381579043544",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/htxcomputersservice%40htxcomputers.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

@@ -12,6 +12,7 @@ import theme from "assets/theme";
 import Presentation from "layouts/pages/presentation";
 import Product from "pages/LandingPages/Product";
 import Checkout from "pages/LandingPages/Checkout";
+import Tracking from "pages/LandingPages/Tracking";
 
 // Material Kit 2 React routes
 import routes from "routes";
@@ -47,6 +48,7 @@ export default function App() {
         <Route path="*" element={<Navigate to="/presentation" />} />
         <Route path="/product" element={<Product />}/>
         <Route path="/checkout" element={<Checkout />}/>
+        <Route path="/trackMyOrder" element={<Tracking />}/>
       </Routes>
     </ThemeProvider>
   );

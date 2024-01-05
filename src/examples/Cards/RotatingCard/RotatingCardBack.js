@@ -27,8 +27,9 @@ import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 import MKButton from "components/MKButton";
 
-function RotatingCard({ color, image, title, description, action, action1 }) {
-  const testLink = action1.route + title;
+function RotatingCard({ color, image, title, description, action, action1, productId }) {
+  const testLink = action1.route + productId;
+  const viewLink = action.route + productId;
   return (
     <MKBox
       display="flex"
@@ -65,7 +66,7 @@ function RotatingCard({ color, image, title, description, action, action1 }) {
             {action.type === "external" ? (
               <MKButton
                 component={MuiLink}
-                href={action.route + title}
+                href={viewLink}
                 target="_blank"
                 rel="noreferrer"
                 color="white"
@@ -75,7 +76,7 @@ function RotatingCard({ color, image, title, description, action, action1 }) {
                 {action.label}
               </MKButton>
             ) : (
-              <MKButton component={Link} to={action.route} color="white" size="small" fullWidth>
+              <MKButton component={Link} to={viewLink} color="white" size="small" fullWidth>
                 {action.label}
               </MKButton>
             )}
