@@ -35,6 +35,7 @@ function HorizontalTeamCard({ image, name, position, description }) {
               src={image}
               alt={name}
               width="100%"
+              height="120px"
               borderRadius="md"
               shadow="lg"
             />
