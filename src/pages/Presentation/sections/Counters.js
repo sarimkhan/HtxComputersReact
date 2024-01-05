@@ -33,7 +33,7 @@ function Counters() {
           <DefaultInfoCard
   icon="local_shipping"
   title="Free Delivery!"
-  description="We offer free delivery on all our orders. The order gets delivered same day or the next business day"
+  description="We offer free local delivery around Houston on all our orders. The order gets delivered same day or the next business day"
   direction="center"
 />
           </Grid>
