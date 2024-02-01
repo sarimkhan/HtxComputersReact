@@ -44,15 +44,11 @@ function RotatingCard({ color, image, title, description, action, action1, produ
       left={0}
       zIndex={5}
       sx={{
-        backgroundImage: ({ palette: { gradients }, functions: { linearGradient, rgba } }) =>
-          `${linearGradient(
-            rgba(gradients[color] ? gradients[color].main : gradients.info.main, 0.85),
-            rgba(gradients[color] ? gradients[color].main : gradients.info.main, 0.85)
-          )}, url(${image})`,
         backgroundSize: "cover",
         backfaceVisibility: "hidden",
         transform: "rotateY(180deg)",
       }}
+      style={{backgroundColor:"#49a3f1"}}
     >
       <MKBox pt={12} pb={2} px={2} textAlign="center" lineHeight={1}>
         <MKTypography variant="h3" color="white" gutterBottom>

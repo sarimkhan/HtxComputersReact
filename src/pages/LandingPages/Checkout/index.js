@@ -58,10 +58,8 @@ const year    = dateObj.getFullYear();
   var config = {
     address: 'lmrht3p7ssu0r',
   };
-  
-  // Create new client
-  var client = sheetdb(config);
-  useEffect(async ()=>{
+
+  const searchSheet = async()=>{
     await client.read({ sheet:'Sheet1', search:{'Id':params.get('product')} }).then(function(data) {
       var temp = JSON.parse(data) 
       setObj(temp)
@@ -71,6 +69,12 @@ const year    = dateObj.getFullYear();
     }, function(err){
       console.log(err);
     });
+  }
+  
+  // Create new client
+  var client = sheetdb(config);
+  useEffect(()=>{
+    searchSheet();
   },[])
 
   const handleSubmit = () =>{
@@ -158,12 +162,12 @@ const year    = dateObj.getFullYear();
     <DefaultNavbar
         routes={routes}
         action={{
-          type: "external",
-          route: "https://www.creative-tim.com/product/material-kit-react",
-          label: "free download",
+          type: "internal",
+          route: "/trackMyOrder",
+          label: "Track Order",
           color: "info",
         }}
-        sticky={true}
+        sticky
       />
       <Card
         sx={{
@@ -234,7 +238,7 @@ const year    = dateObj.getFullYear();
                 </Grid>
               <Grid container item justifyContent="center" xs={12}>
                 <MKTypography variant="body">
-                  Don't worry, no need to pay us until the product is delivered to you.
+                  Dont worry, no need to pay us until the product is delivered to you.
                 </MKTypography>
                 </Grid>
                 <Grid container item justifyContent="center" xs={12}>

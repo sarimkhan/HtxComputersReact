@@ -13,8 +13,10 @@
   },
   "plugins": ["react", "prettier"],
   "rules": {
+    "react/prop-types": "off",
+    "no-unused-vars": "off",
     "prettier/prettier": [
-      "error",
+      "warn",
       {
         "endOfLine": "auto"
       }

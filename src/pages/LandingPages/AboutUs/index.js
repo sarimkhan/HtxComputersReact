@@ -46,10 +46,10 @@ function AboutUs() {
       <DefaultNavbar
         routes={routes}
         action={{
-          type: "external",
-          route: "https://www.creative-tim.com/product/material-kit-react",
-          label: "free download",
-          color: "default",
+          type: "internal",
+          route: "/trackMyOrder",
+          label: "Track Order",
+          color: "info",
         }}
         transparent
         light
@@ -92,7 +92,7 @@ function AboutUs() {
               HTX Computer Market, your trusted source for reliable computing solutions
             </MKTypography>
             <MKTypography variant="body1" color="white" opacity={0.8} mt={3} mb={3}>
-              Reliable computers tailored for your community's needs. Empowering your community with dependable local computing solutions by enhancing your productivity
+              Reliable computers tailored for your needs. Empowering your community with dependable local computing solutions by enhancing your productivity
               and redefining your digital experience.
             </MKTypography>
             {/*<MKButton color="default" sx={{ color: ({ palette: { dark } }) => dark.main }}>

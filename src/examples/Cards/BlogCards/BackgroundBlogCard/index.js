@@ -96,7 +96,7 @@ function BackgroundBlogCard({ image, title, description, action }) {
               sx={cardActionStyles}
             >
               {action.label}
-              <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
+              {/* <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon> */}
             </MKTypography>
           )}
         </MKBox>

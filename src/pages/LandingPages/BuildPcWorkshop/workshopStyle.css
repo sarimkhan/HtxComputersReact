@@ -1,0 +1,25 @@
+.curriculumBox:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 58px 0 rgba(255, 255, 255, 0.8), 0 6px 50px 0 rgba(255, 255, 255, 0.8);
+}
+.curriculumBox{
+    transition: all 0.3s;
+    border-radius: 10px !important;
+}
+.gameBox:hover{
+    transform: scale(1.05);
+}
+.gameBox{
+    transition: all 0.3s;
+    border-radius: 10px !important;
+}
+
+.loadingDiv{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    height: 85%;
+    width: 95%;
+    z-index: 100;
+}

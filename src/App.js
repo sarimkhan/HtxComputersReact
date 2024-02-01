@@ -13,6 +13,11 @@ import Presentation from "layouts/pages/presentation";
 import Product from "pages/LandingPages/Product";
 import Checkout from "pages/LandingPages/Checkout";
 import Tracking from "pages/LandingPages/Tracking";
+import ForGaming from "pages/LandingPages/ForGaming";
+import ForBusiness from "pages/ForBusiness";
+import ProductDetails from "pages/LandingPages/ProductDetails";
+import BuildPcWorkshop from "pages/LandingPages/BuildPcWorkshop";
+import WebDevWorkshop from "pages/LandingPages/WebDevWorkshop";
 
 // Material Kit 2 React routes
 import routes from "routes";
@@ -49,6 +54,11 @@ export default function App() {
         <Route path="/product" element={<Product />}/>
         <Route path="/checkout" element={<Checkout />}/>
         <Route path="/trackMyOrder" element={<Tracking />}/>
+        <Route path="/forGaming" element={<ForGaming />}/>
+        <Route path="/forBusiness" element={<ForBusiness />}/>
+        <Route path="/productDetails" element={<ProductDetails />}/>
+        <Route path="/buildPcWorkshop" element={<BuildPcWorkshop />}/>
+        <Route path="/webDevWorkshop" element={<WebDevWorkshop />}/>
       </Routes>
     </ThemeProvider>
   );
